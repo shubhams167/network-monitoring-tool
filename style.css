@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(background.jpeg) no-repeat;
+    background-size: 1920px 1080px;
+    font-family: sans-serif;
+}
+
+.login-box{
+    width: 320px;
+    height: 400px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+h1{
+    margin: 0 0 20px;
+    padding: 0 0 0px;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.login-box input[type = "text"], input[type = "password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box input[type = "submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #555;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.login-box input[type = "submit"]:hover{
+    cursor: pointer;
+    background: #fb2525;
+    color: #fff;
+    outline: none;
+}
+
+.login-box a{
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 12px;
+    line-height: 20px;
+    outline: none;
+}
