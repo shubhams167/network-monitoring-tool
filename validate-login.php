@@ -25,7 +25,7 @@
 
     // Process the returned data
     $row = mysqli_fetch_row($result);
-    if($row[0] == $username && $row[1] == $password){
+    if($row[0] == $username && $row[1] == $password && $username != '' && $password != ''){
         echo "Login successful";
     }
     else{
