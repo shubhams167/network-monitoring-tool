@@ -25,13 +25,15 @@
 
     // Process the returned data
     $row = mysqli_fetch_row($result);
-    if($row[0] == $username && $row[1] == $password && $username != '' && $password != ''){
-        echo "Login successful";
+    if($username && $password && $row[0] == $username && $row[1] == $password){
+        //echo "Login successful";
+        header("Location: http://localhost/monitor.html");
+        exit();
     }
     else{
-        echo "Login failed. Try again!";
         //Reload login page to ask again for username of password
         include('index.html');
+        echo "<script type = 'text/javascript'>alert('Login failed. Try again!');</script>";
     }
 
     // Free up memory

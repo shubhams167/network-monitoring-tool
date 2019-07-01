@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            Monitor
+        </title>
+        <link rel = "stylesheet" href = "monitor-style.css" type = "text/css">
+    </head>
+    <body>
+        <div class = "monitor-form">
+            <h1>MONITOR</h1>
+            <form action = "result.php" method = "POST">
+                <div class = "flex-container">
+                    <div class = "protocol-btn">
+                        <p>Protocols</p>
+                        <input type = "radio" name = "protocol" value = "tcp" checked>TCP<br>
+                        <input type = "radio" name = "protocol" value = "udp">UDP<br>
+                        <input type = "radio" name = "protocol" value = "arp">ARP<br>
+                    </div>
+                    <div class = "dropdown-menu">
+                        <p>Select</p>
+                        <select autofocus name = "dropdownMenu">
+                            <option value = "all packets">All packets</option>
+                            <option value = "timestamp">Timestamp</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <input type = "submit" name = "" value = "Submit">
+            </form>
+        </div>
+    </body>
+</html>
