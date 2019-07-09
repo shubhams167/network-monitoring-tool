@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #dd1818;
+    background-image: linear-gradient(to top, #222, #dd1818);
+    font-family: sans-serif;
+}
+
+.status-bar{
+    position: relative;
+    background: rgb(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.status-bar-username{
+    display: inline-block;
+    margin: 0;
+}
+
+.status-bar-logout{
+    float: right;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.status-bar-logout:hover{
+    color: fb2525;
+}
+
+.content-box{
+    background: rgb(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 30px 30px;
+    border-radius: 10px;
+    color: white;
+    overflow-x: hidden;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+pre{
+    margin: 0;
+    padding: 0;
+}

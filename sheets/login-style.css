@@ -1,24 +1,26 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(background.jpeg) no-repeat;
-    background-size: 1920px 1080px;
+    background: #dd1818;
+    background-image: linear-gradient(to top, #222, #dd1818);
     font-family: sans-serif;
 }
 
+form{
+    margin: 0;
+    padding: 0;
+}
+
 .login-box{
-    width: 320px;
-    height: 400px;
-    background: #000;
+    background: rgb(0, 0, 0, 0.9);
     color: #fff;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    padding: 50px 30px;
+    padding: 30px 20px;
     border-radius: 10px;
-    opacity: 0.9;
 }
 
 h1{

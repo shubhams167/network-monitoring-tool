@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #dd1818;
+    background-image: linear-gradient(to top, #222, #dd1818);
+    font-family: sans-serif;
+}
+
+.box{
+    width: 400px;
+    height: 120px;
+    background: rgb(0, 0, 0, 0.9);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+p{
+    text-align: center;
+}
+
+.box a{
+    text-decoration: underline;
+    outline: none;
+    color: white;
+}
