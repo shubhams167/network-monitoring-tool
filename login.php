@@ -6,9 +6,10 @@
         exit();//Stop executing rest script
     }
 
+    /*
     if(!empty($_SESSION['login_failed']) && $_SESSION['login_failed']){
         echo "<script type = 'text/javascript'>alert('Login failed. Try again!');</script>";
-    }
+    }*/
     
     //Check if form has been submitted and $_POST has form data
     if(!empty($_POST)){
@@ -79,9 +80,17 @@
                 <p>Password</p>
                 <input type = "password" name = "password" placeholder="Enter password" required />
                 <input type = "submit" name = "" value = "Login">
-                <a href = "#">Forgot password?</a><br>
-                <a href = "#">Sign up</a><br>
+                <a onclick = "showMsg()">Forgot password?</a><br>
+                <a onclick = "showMsg()">Sign up</a><br>
+                <script>
+                    function showMsg(){
+                        alert("Please contact admin.");
+                    }
+                </script>
             </form>
         </div>
     </body>
+    <footer>
+        Developed by Shubham Singh
+    </footer>
 </html>

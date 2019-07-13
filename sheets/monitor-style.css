@@ -3,6 +3,7 @@ body{
     padding: 0;
     background: #dd1818;
     background-image: linear-gradient(to top, #222, #dd1818);
+    background-repeat: no-repeat;
     font-family: sans-serif;
 }
 
@@ -33,9 +34,12 @@ body{
     color: fb2525;
 }
 
+form{
+    margin: 0px 0px;
+}
+
 .monitor-form{
     width: 400px;
-    height: 300px;
     background: rgb(0, 0, 0, 0.9);
     color: #fff;
     top: 50%;
@@ -56,6 +60,7 @@ h1{
 
 .flex-container{
     display: flex;
+    margin-bottom: 10px;
 }
 
 .flex-container > div{
@@ -67,10 +72,17 @@ h1{
 select{
     outline: none;
     width: 150px;
-    height: 30px;
-    /*border-radius: 10px;*/
+    height: 25px;
     font-size: 16px;
     font: sans-serif;
+    margin: 0px 0px 0px 3px;
+}
+
+.monitor-form input[type = "number"]{
+    font-size: 16px;
+    margin: 0px 0px 0px 3px;
+    width: 150px;
+    height: 25px;
 }
 
 option{
@@ -94,10 +106,30 @@ input{
     font-size: 18px;
     border-radius: 10px;
     position: relative;
+    margin-top: 10px;
+    padding: 0px 0px;
 }
 
 .monitor-form input[type = "submit"]:hover{
     cursor: pointer;
     background: #fb2525;
     color: #fff;
+}
+
+footer{
+    background: rgb(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -150%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+p{
+    margin: 15px 0px;
 }

@@ -18,7 +18,7 @@
     <body>
         <div class = "status-bar">
             <p class = "status-bar-username">
-                <?php echo "Logged in as ".$_SESSION['username']."!"; ?>
+                <?php echo "Logged in as <u>".$_SESSION['username']."</u>"; ?>
             </p>
             <a class = "status-bar-logout" href = "logout.php">Logout</a>
         </div>
@@ -28,16 +28,25 @@
                 <div class = "flex-container">
                     <div class = "protocol-btn">
                         <p>Protocols</p>
-                        <input type = "radio" name = "protocol" value = "tcp" checked>TCP<br>
-                        <input type = "radio" name = "protocol" value = "udp">UDP<br>
-                        <input type = "radio" name = "protocol" value = "arp">ARP<br>
+                        <input type = "radio" name = "protocol" value = "tcp" checked>TCP<br><br>
+                        <input type = "radio" name = "protocol" value = "udp">UDP<br><br>
+                        <input type = "radio" name = "protocol" value = "arp">ARP<br><br>
                     </div>
                     <div class = "dropdown-menu">
                         <p>Filter</p>
-                        <select name = "dropdownMenu">
-                            <option value = "all packets">All packets</option>
+                        <select name = "filter">
+                            <option value = "all">All</option>
                             <option value = "timestamp">Timestamp</option>
+                            <option value = "sourceIP">Source IP</option>
+                            <option value = "sourcePort">Source port</option>
+                            <option value = "destinationIP">Destination IP</option>
+                            <option value = "destinationPort">Destination port</option>
+                            <option value = "sourceMAC">Source MAC</option>
+                            <option value = "destinationMAC">Destination MAC</option>
+                            <option value = "packetLength">Packet length</option>
                         </select>
+                        <p>Packet count</p>
+                        <input type="number" name = "packetCount" value = "10">
                     </div>
                 </div>
                 
@@ -45,4 +54,7 @@
             </form>
         </div>
     </body>
+    <footer>
+        Developed by Shubham Singh
+    </footer>
 </html>
