@@ -36,12 +36,12 @@ body{
 .content-box{
     background: rgb(0, 0, 0, 0.9);
     color: #fff;
-    padding: 30px 30px;
+    padding: 25px 25px;
     border-radius: 10px;
     color: white;
     overflow-x: hidden;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 30px;
 }
 
@@ -56,21 +56,23 @@ h2{
 table{
     color: white;
     border-collapse: collapse;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 td, th{
     border: 1px solid white;
-    text-align: center;
     padding: 5px;
 }
 
 th{
-    font-size: 14px;
+    font-size: 15px;
+    background-color: #333;
+    text-align: center;
 }
 
 td{
     font-size: 12px;
+    text-align: left;
 }
 
 pre{
@@ -86,13 +88,13 @@ p{
 footer{
     background: rgb(0, 0, 0, 0.8);
     color: white;
-    width: 100%;
-    padding: 5px;
+    /*width: 100%;*/
     text-align: center;
     top: 100%;
     left: 50%;
-    position: fixed;
-    transform: translate(-50%, -150%);
-    border-radius: 10px;
+    position: sticky;
+    /*transform: translate(-50%, -150%);*/
+    /*border-radius: 10px;*/
     padding: 10px;
+    margin-bottom: 10px;
 }
