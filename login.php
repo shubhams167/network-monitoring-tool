@@ -6,11 +6,6 @@
         exit();//Stop executing rest script
     }
 
-    /*
-    if(!empty($_SESSION['login_failed']) && $_SESSION['login_failed']){
-        echo "<script type = 'text/javascript'>alert('Login failed. Try again!');</script>";
-    }*/
-
     //Check if form has been submitted and $_POST has form data
     if(isset($_POST['submit'])){
 	//Google recaptcha
