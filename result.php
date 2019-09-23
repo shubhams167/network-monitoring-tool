@@ -33,7 +33,7 @@
                         echo "<table>";
                     
                     //Command to read packets and store them in a .pcap file
-                    $cmd = "sudo tcpdump -i enp0s3 -w output.pcap";
+                    $cmd = "sudo tcpdump -i eth0 -w output.pcap";
                     //Add packet count
                     $cmd = $cmd . " -c " . $packetCount;
                     //Decide which protocol to filter out
