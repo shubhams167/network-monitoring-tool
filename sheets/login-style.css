@@ -19,7 +19,7 @@ form{
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    padding: 30px 20px;
+    padding: 20px 20px;
     border-radius: 10px;
 }
 
@@ -28,7 +28,13 @@ h1{
     padding: 0 0 0px;
     text-align: center;
     font-size: 24px;
-    
+}
+
+h6{
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    color: red;
 }
 
 .login-box p{
@@ -68,6 +74,10 @@ h1{
     background: #fb2525;
     color: #fff;
     outline: none;
+}
+
+.login-box .g-recaptcha{
+    margin: 0 0 20px 0;
 }
 
 .login-box a{
